@@ -81,6 +81,7 @@ function renderProblem(problem) {
   board.className = "table";
 
   const seats = ["north", "west", "east", "south"];
+  const seats = ["N", "W", "E", "S"];
   seats.forEach(seat => {
     const div = document.createElement("div");
     div.className = `hand ${seat}`;
