@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "South to Play",
+    "hands": {
+      "N": "♠ AQT7 ♥ KJ3 ♦ 762 ♣ 985",
+      "E": "♠ 842 ♥ Q97 ♦ AKJ3 ♣ 742",
+      "S": "♠ KJ96 ♥ A105 ♦ Q98 ♣ AKQ",
+      "W": "♠ 53 ♥ 8642 ♦ 1054 ♣ J1063"
+    },
+    "contract": "4♠ by South",
+    "problem": "What is the correct opening lead?",
+    "options": ["♥Q", "♦A", "♣J", "♠5"],
+    "answer": "♦A",
+    "explanation": "Leading ♦A is correct to establish tricks quickly."
+  },
+  {
+    "id": 2,
+    "title": "Declarer Play",
+    "hands": {
+      "N": "♠ KQ ♥ 875 ♦ AQ92 ♣ J93",
+      "E": "♠ 763 ♥ KJ106 ♦ 1074 ♣ Q75",
+      "S": "♠ AJ109 ♥ AQ9 ♦ K53 ♣ AK8",
+      "W": "♠ 8542 ♥ 432 ♦ J86 ♣ 1062"
+    },
+    "contract": "3NT by South",
+    "problem": "West leads ♥4. What is South's best plan?",
+    "options": ["Duck one heart", "Win immediately", "Finesse spades", "Lead clubs first"],
+    "answer": "Duck one heart",
+    "explanation": "Ducking preserves a stopper and keeps control against East's hearts."
+  }
+]
