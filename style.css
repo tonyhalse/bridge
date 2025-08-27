@@ -76,3 +76,13 @@ body {
 #options button.clubs    { color: black; }
 #options button.hearts   { color: red; }
 #options button.diamonds { color: red; }
+
+.card {
+  height: 75px;          /* nice balance between clarity and fitting on page */
+  margin-right: 4px;     /* little spacing between cards */
+  vertical-align: middle;
+}
+
+.cards {
+  margin: 4px 0;         /* tighter vertical spacing between suit rows */
+}
