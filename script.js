@@ -65,4 +65,27 @@ document.getElementById("nextBtn").onclick = () => {
   showProblem();
 };
 
+p.options.forEach(opt => {
+  const btn = document.createElement("button");
+  btn.textContent = opt;
+
+  // add a class depending on the suit
+  if (opt.includes("♠")) btn.classList.add("spades");
+  if (opt.includes("♥")) btn.classList.add("hearts");
+  if (opt.includes("♦")) btn.classList.add("diamonds");
+  if (opt.includes("♣")) btn.classList.add("clubs");
+
+  btn.onclick = () => {
+    if (opt === p.answer) {
+      document.getElementById("feedback").textContent =
+        "✅ Correct! " + p.explanation;
+      document.getElementById("nextBtn").style.display = "inline-block";
+    } else {
+      document.getElementById("feedback").textContent = "❌ Try again.";
+    }
+  };
+  optionsDiv.appendChild(btn);
+});
+
+
 loadProblems();
