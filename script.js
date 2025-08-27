@@ -80,7 +80,7 @@ function renderProblem(problem) {
   // Layout grid for compass positions
   board.className = "table";
 
-  const seats = ["N", "W", "E", "S"];
+  const seats = ["north", "west", "east", "south"];
   seats.forEach(seat => {
     const div = document.createElement("div");
     div.className = `hand ${seat}`;
