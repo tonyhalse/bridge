@@ -47,7 +47,7 @@ function checkDeal(deal) {
 }
 
 
-function renderHand(label, hand) {
+function renderHandOLD(label, hand) {
   return `
     <div class="hand">
       <div><b>${label}</b></div>
@@ -57,6 +57,57 @@ function renderHand(label, hand) {
       <div class="cards">${renderCards("clubs", hand.clubs)}</div>
     </div>
   `;
+}
+function renderHand(container, cards) {
+  // cards: e.g. ["AS","KH","QD","2C"]
+  const handDiv = document.createElement("div");
+  handDiv.className = "cards";
+
+  cards.forEach(card => {
+    const img = document.createElement("img");
+    img.src = `cards/${card}.png`;   // adjust path if needed
+    img.alt = card;
+    handDiv.appendChild(img);
+  });
+
+  container.appendChild(handDiv);
+}
+
+function renderProblem(problem) {
+  const board = document.getElementById("board");
+  board.innerHTML = ""; // clear old
+
+  // Layout grid for compass positions
+  board.className = "table";
+
+  const seats = ["north", "west", "east", "south"];
+  seats.forEach(seat => {
+    const div = document.createElement("div");
+    div.className = `hand ${seat}`;
+
+    // Gather all cards into one array
+    let cards = [];
+    ["spades", "hearts", "diamonds", "clubs"].forEach(suit => {
+      if (problem.hands[seat[0].toUpperCase()]) {
+        const suitCards = problem.hands[seat[0].toUpperCase()][suit];
+        if (suitCards) {
+          cards = cards.concat(suitCards.split("").map(r => {
+            // handle 10 as "T"
+            return r + suit[0].toUpperCase();
+          }));
+        }
+      }
+    });
+
+    renderHand(div, cards);
+    board.appendChild(div);
+  });
+
+  // Show contract/problem text in center
+  const center = document.createElement("div");
+  center.className = "center";
+  center.innerHTML = `<h3>${problem.contract}</h3><p>${problem.problem}</p>`;
+  board.appendChild(center);
 }
 
 function renderCards(suit, ranks) {
@@ -75,7 +126,7 @@ function convertRank(r) {
   return r;
 }
 
-function showProblem() {
+function showProblemOLD() {
   const p = problems[current];
   document.getElementById("problem-container").innerHTML = `
     <h2>${p.title}</h2>
@@ -119,6 +170,11 @@ function showProblem() {
     };
     optionsDiv.appendChild(btn);
   });
+}
+
+function showProblem() {
+  const p = problems[current];
+  renderProblem(p);
 }
 
 // Next problem
