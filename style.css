@@ -1,23 +1,7 @@
 body {
   font-family: Arial, sans-serif;
+  text-align: center;
   margin: 20px;
-}
-
-.hand {
-  white-space: pre;
-  margin: 5px 0;
-  font-family: monospace;
-}
-
-.options button {
-  margin: 5px;
-  padding: 8px 12px;
-  font-size: 1em;
-}
-
-#feedback {
-  margin-top: 15px;
-  font-weight: bold;
 }
 
 #table {
@@ -26,50 +10,37 @@ body {
     ". north ."
     "west center east"
     ". south .";
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 10px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
   margin: 20px auto;
-  text-align: center;
-  max-width: 600px;
 }
 
-.north { grid-area: north; }
-.south { grid-area: south; }
-.east  { grid-area: east; }
-.west  { grid-area: west; }
-.center{ grid-area: center; }
+.north  { grid-area: north; }
+.south  { grid-area: south; }
+.east   { grid-area: east; }
+.west   { grid-area: west; }
+.center { grid-area: center; }
 
+/* Hands */
 .hand {
-  background: #f8f8f8;
-  border: 1px solid #ccc;
-  padding: 6px;
-  border-radius: 6px;
+  font-family: monospace;
   text-align: left;
-  line-height: 1.1;     /* tighter spacing */
+  line-height: 1.2; /* tighter spacing */
 }
 
 .hand div {
-  font-size: 1.1em;   /* a little bigger */
-  font-weight: bold;  /* bold suits */
+  margin: 0;
   padding: 0;
-  margin-top: 2px;   /* tiny controlled gap between suits */
+  font-weight: bold;
 }
 
-.hand .spades { color: black; }
-.hand .clubs  { color: black; }
-.hand .hearts { color: red; }
+.hand .spades   { color: black; }
+.hand .clubs    { color: black; }
+.hand .hearts   { color: red; }
 .hand .diamonds { color: red; }
 
-/* Optional: make the suit symbol stand out more */
-.hand .spades::first-letter,
-.hand .hearts::first-letter,
-.hand .diamonds::first-letter,
-.hand .clubs::first-letter {
-  font-size: 1.3em;
-  margin-right: 4px;
-}
-
+/* Options (answer buttons) */
 #options {
   margin-top: 12px;
   display: flex;
@@ -100,9 +71,8 @@ body {
   transform: translateY(1px);
 }
 
-/* suit-specific coloring */
+/* Suit coloring for buttons */
 #options button.spades   { color: black; }
 #options button.clubs    { color: black; }
 #options button.hearts   { color: red; }
 #options button.diamonds { color: red; }
-
