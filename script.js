@@ -71,5 +71,4 @@ document.getElementById("nextBtn").onclick = () => {
   showProblem();
 };
 
-// Load first problem
-showProblem();
+loadProblems();
