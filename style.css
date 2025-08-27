@@ -48,6 +48,29 @@ body {
   font-family: monospace;
 }
 
-.hand div { font-family: monospace; text-align: left; }
-.hand .hearts, .hand .diamonds { color: red; }
+.hand {
+  font-family: monospace;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.hand div {
+  font-size: 1.1em;   /* a little bigger */
+  font-weight: bold;  /* bold suits */
+}
+
+.hand .spades { color: black; }
+.hand .clubs  { color: black; }
+.hand .hearts { color: red; }
+.hand .diamonds { color: red; }
+
+/* Optional: make the suit symbol stand out more */
+.hand .spades::first-letter,
+.hand .hearts::first-letter,
+.hand .diamonds::first-letter,
+.hand .clubs::first-letter {
+  font-size: 1.3em;
+  margin-right: 4px;
+}
+
 
