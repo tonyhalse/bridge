@@ -29,7 +29,10 @@
       "clubs": "KJ9"
     }
   },
-  "problem": "South is in 3NT. After cashing the diamonds and hearts, East is squeezed in spades and hearts. How should declarer plan the play?"
+  "problem": "South is in 3NT. After cashing the diamonds and hearts, East is squeezed in spades and hearts. How should declarer plan the play?",
+    "options": ["♥Q", "♦A", "♣J", "♠5"],
+    "answer": "♦A",
+    "explanation": "Leading ♦A is correct to establish tricks quickly."
 },
   {
     "id": 2,
