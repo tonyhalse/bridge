@@ -1,6 +1,70 @@
 [
   {
     "id": 1,
+    "contract": "3NT by South",
+    "declarer": "S",
+    "hands": {
+      "N": {
+        "spades": "AQ3",
+        "hearts": "KJ4",
+        "diamonds": "AQ7",
+        "clubs": "432"
+      },
+      "E": {
+        "spades": "JT97",
+        "hearts": "Q983",
+        "diamonds": "42",
+        "clubs": "T7"
+      },
+      "S": {
+        "spades": "K42",
+        "hearts": "A76",
+        "diamonds": "KJ53",
+        "clubs": "AQ"
+      },
+      "W": {
+        "spades": "865",
+        "hearts": "T52",
+        "diamonds": "T986",
+        "clubs": "KJ9"
+      }
+    },
+    "problem": "South is in 3NT. After cashing the diamonds and hearts, East is squeezed in spades and hearts. How should declarer plan the play?"
+  },
+  {
+    "id": 2,
+    "contract": "6♥ by South",
+    "declarer": "S",
+    "hands": {
+      "N": {
+        "spades": "A3",
+        "hearts": "QJT9",
+        "diamonds": "KQ5",
+        "clubs": "A84"
+      },
+      "E": {
+        "spades": "QJT5",
+        "hearts": "65",
+        "diamonds": "J982",
+        "clubs": "T3"
+      },
+      "S": {
+        "spades": "K42",
+        "hearts": "AK8742",
+        "diamonds": "A4",
+        "clubs": "KQ"
+      },
+      "W": {
+        "spades": "9876",
+        "hearts": "3",
+        "diamonds": "T763",
+        "clubs": "J976"
+      }
+    },
+    "problem": "South is in 6♥. After drawing trumps and running side-suit winners, East is squeezed in spades and diamonds. What’s the winning plan?"
+  },
+  {
+    "id": 3,
     "title": "South to Play",
     "hands": {
       "N": { "spades": "AQT7", "hearts": "KJ3", "diamonds": "762", "clubs": "985" },
@@ -15,7 +79,7 @@
     "explanation": "Leading ♦A is correct to establish tricks quickly."
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Declarer Play",
     "hands": {
       "N": { "spades": "KQ",   "hearts": "875",  "diamonds": "AQ92", "clubs": "J93" },
