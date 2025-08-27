@@ -32,7 +32,6 @@ body {
   overflow-x: auto;  /* allow scroll if super-long */
 }
 
-
 .hand div {
   margin: 0;
   padding: 0;
@@ -89,18 +88,6 @@ body {
 
 .cards {
   margin: 8px 0;         /* spacing between suit rows */
-}
-
-/* NEW */
-.table {
-  display: grid;
-  grid-template-areas:
-    ". north ."
-    "west center east"
-    ". south .";
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
 }
 
 .hand .cards {
