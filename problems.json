@@ -45,39 +45,39 @@
   "declarer": "S",
   "hands": {
     "N": {
-      "spades": "A4",
+      "spades": "AJ42",
       "hearts": "KQ3",
-      "diamonds": "A763",
-      "clubs": "J982"
+      "diamonds": "A76",
+      "clubs": "J98"
     },
     "E": {
-      "spades": "QJT9",
-      "hearts": "T82",
+      "spades": "QT98",
+      "hearts": "J2",
       "diamonds": "985",
-      "clubs": "Q7"
+      "clubs": "QT76"
     },
     "S": {
-      "spades": "K3",
-      "hearts": "AJ94",
+      "spades": "K5",
+      "hearts": "A94",
       "diamonds": "KQJ2",
-      "clubs": "AK3"
+      "clubs": "AK54"
     },
     "W": {
-      "spades": "87652",
-      "hearts": "765",
-      "diamonds": "T4",
-      "clubs": "T654"
+      "spades": "763",
+      "hearts": "T8765",
+      "diamonds": "T43",
+      "clubs": "32"
     }
   },
-  "problem": "South is in 6NT. Declarer counts 11 top tricks (2 spades, 3 hearts, 4 diamonds, 2 clubs). How can South make a 12th trick?",
+  "problem": "South is in 6NT. Declarer counts 11 top tricks (spades 2, hearts 3, diamonds 4, clubs 2). How can South make the 12th trick?",
   "options": [
-    "Take a spade finesse",
-    "Play for a diamond break",
-    "Run the red suits and clubs to squeeze East in spades and clubs",
-    "Duck a trick early to rectify the count"
+    "Cash the diamonds and hearts, then cash clubs to squeeze East in spades or clubs",
+    "Finesse spades through East",
+    "Give up a club early to establish an entry",
+    "Play a long club immediately to set up tricks"
   ],
-  "answer": "Run the red suits and clubs to squeeze East in spades and clubs",
-  "explanation": "After cashing all hearts, diamonds, and clubs, East is squeezed. If East throws a spade, dummy’s spade 4 becomes good; if East throws a club, declarer’s third club becomes good. Either way, declarer has 12 tricks."
+  "answer": "Cash the diamonds and hearts, then cash clubs to squeeze East in spades or clubs",
+  "explanation": "Plan: declarer cashes all four diamond winners and the three heart winners (rectifying the count). East must keep guards in spades (Q T 9 8) and clubs (Q T 7 6). When declarer then cashes the two top clubs (A, K), East is forced to discard from spades or clubs. If East abandons a spade guard, dummy's J becomes good; if East abandons a club guard, dummy's J (or South's remaining club) becomes good. That produces the 12th trick."
 },
   {
     "id": 3,
