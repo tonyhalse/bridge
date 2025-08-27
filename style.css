@@ -91,3 +91,37 @@ body {
   margin: 8px 0;         /* spacing between suit rows */
 }
 
+/* NEW */
+.table {
+  display: grid;
+  grid-template-areas:
+    ". north ."
+    "west center east"
+    ". south .";
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.north { grid-area: north; }
+.south { grid-area: south; }
+.east  { grid-area: east; }
+.west  { grid-area: west; }
+.center { grid-area: center; }
+
+.hand .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hand .cards img {
+  width: 70px;        /* adjust size */
+  margin-left: -50px; /* overlap */
+  position: relative;
+  z-index: 1;
+}
+
+.hand .cards img:first-child {
+  margin-left: 0;
+}
