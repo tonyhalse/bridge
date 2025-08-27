@@ -11,12 +11,16 @@ function showProblem() {
   const p = problems[current];
   document.getElementById("problem-container").innerHTML = `
     <h2>${p.title}</h2>
-    <p><b>Contract:</b> ${p.contract}</p>
-    <pre class="hand">N: ${p.hands.N}</pre>
-    <pre class="hand">E: ${p.hands.E}</pre>
-    <pre class="hand">S: ${p.hands.S}</pre>
-    <pre class="hand">W: ${p.hands.W}</pre>
-    <p>${p.problem}</p>
+    <div id="table">
+      <div class="north hand">N: ${p.hands.N}</div>
+      <div class="west hand">W: ${p.hands.W}</div>
+      <div class="center">
+        <p><b>Contract:</b> ${p.contract}</p>
+        <p>${p.problem}</p>
+      </div>
+      <div class="east hand">E: ${p.hands.E}</div>
+      <div class="south hand">S: ${p.hands.S}</div>
+    </div>
   `;
 
   const optionsDiv = document.getElementById("options");
