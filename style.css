@@ -27,7 +27,11 @@ body {
   font-family: monospace;
   text-align: left;
   line-height: 1.2; /* tighter spacing */
+  display: inline-block;
+  max-width: 95vw;   /* scale within screen width */
+  overflow-x: auto;  /* allow scroll if super-long */
 }
+
 
 .hand div {
   margin: 0;
@@ -78,11 +82,12 @@ body {
 #options button.diamonds { color: red; }
 
 .card {
-  height: 75px;          /* nice balance between clarity and fitting on page */
-  margin-right: 4px;     /* little spacing between cards */
+  height: 115px;         /* bigger cards */
+  margin-right: 6px;     /* space between cards in a row */
   vertical-align: middle;
 }
 
 .cards {
-  margin: 4px 0;         /* tighter vertical spacing between suit rows */
+  margin: 8px 0;         /* spacing between suit rows */
 }
+
