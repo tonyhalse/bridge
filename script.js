@@ -9,19 +9,19 @@ async function loadProblems() {
 
 function showProblem() {
   const p = problems[current];
-  document.getElementById("problem-container").innerHTML = `
-    <h2>${p.title}</h2>
-    <div id="table">
-      <div class="north hand">N: ${p.hands.N}</div>
-      <div class="west hand">W: ${p.hands.W}</div>
-      <div class="center">
-        <p><b>Contract:</b> ${p.contract}</p>
-        <p>${p.problem}</p>
-      </div>
-      <div class="east hand">E: ${p.hands.E}</div>
-      <div class="south hand">S: ${p.hands.S}</div>
+document.getElementById("problem-container").innerHTML = `
+  <h2>${p.title}</h2>
+  <div id="table">
+    <div class="north">${renderHand("N", p.hands.N)}</div>
+    <div class="west">${renderHand("W", p.hands.W)}</div>
+    <div class="center">
+      <p><b>Contract:</b> ${p.contract}</p>
+      <p>${p.problem}</p>
     </div>
-  `;
+    <div class="east">${renderHand("E", p.hands.E)}</div>
+    <div class="south">${renderHand("S", p.hands.S)}</div>
+  </div>
+`;
 
   const optionsDiv = document.getElementById("options");
   optionsDiv.innerHTML = "";
