@@ -40,45 +40,45 @@
     "explanation": "Declarer should cash the diamonds and then the heart winners, forcing East to discard a spade guard. This creates an extra trick."
   },
   {
-    "id": 2,
-    "contract": "6♥ by South",
-    "declarer": "S",
-    "hands": {
-      "N": {
-        "spades": "A3",
-        "hearts": "QJT9",
-        "diamonds": "Q85",
-        "clubs": "A843"
-      },
-      "E": {
-        "spades": "QJT9",
-        "hearts": "65",
-        "diamonds": "J976",
-        "clubs": "T76"
-      },
-      "S": {
-        "spades": "K4",
-        "hearts": "AK8742",
-        "diamonds": "A2",
-        "clubs": "KQ3"
-      },
-      "W": {
-        "spades": "8765",
-        "hearts": "3",
-        "diamonds": "KT843",
-        "clubs": "J92"
-      }
+  "id": 2,
+  "contract": "6NT by South",
+  "declarer": "S",
+  "hands": {
+    "N": {
+      "spades": "A4",
+      "hearts": "KQ3",
+      "diamonds": "A763",
+      "clubs": "J982"
     },
-    "problem": "South is in 6♥. After drawing trumps, declarer can cash side-suit winners. East appears to be the only defender who can hold both spades and diamonds. How should declarer play to effect the simple squeeze?",
-    "options": [
-      "Draw trumps, then cash clubs and high side winners in the correct order to squeeze East",
-      "Draw trumps, give up a small diamond to eliminate an entry, then claim",
-      "Draw one trump, finesse spades through East, then run clubs",
-      "Ruff two diamonds early to create an extra trick"
-    ],
-    "answer": "Draw trumps, then cash clubs and high side winners in the correct order to squeeze East",
-    "explanation": "Draw trumps, then run the club winners and other high cards. East cannot keep control of both spades and diamonds, so one suit will yield an extra trick."
+    "E": {
+      "spades": "QJT9",
+      "hearts": "T82",
+      "diamonds": "985",
+      "clubs": "Q7"
+    },
+    "S": {
+      "spades": "K3",
+      "hearts": "AJ94",
+      "diamonds": "KQJ2",
+      "clubs": "AK3"
+    },
+    "W": {
+      "spades": "87652",
+      "hearts": "765",
+      "diamonds": "T4",
+      "clubs": "T654"
+    }
   },
+  "problem": "South is in 6NT. Declarer counts 11 top tricks (2 spades, 3 hearts, 4 diamonds, 2 clubs). How can South make a 12th trick?",
+  "options": [
+    "Take a spade finesse",
+    "Play for a diamond break",
+    "Run the red suits and clubs to squeeze East in spades and clubs",
+    "Duck a trick early to rectify the count"
+  ],
+  "answer": "Run the red suits and clubs to squeeze East in spades and clubs",
+  "explanation": "After cashing all hearts, diamonds, and clubs, East is squeezed. If East throws a spade, dummy’s spade 4 becomes good; if East throws a club, declarer’s third club becomes good. Either way, declarer has 12 tricks."
+},
   {
     "id": 3,
     "title": "South to Play",
