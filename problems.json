@@ -73,9 +73,7 @@
   ],
   "answer": "Draw trumps, then cash clubs and high side winners in the correct order to squeeze East",
   "explanation": "Plan: draw trumps (cash the heart ace and kings) so trumps are gone. Then run the established club winners (A, K, Q etc.) and other side winners from the two hands. East must follow and will be forced to discard a guard in either spades or diamonds. If East discards a spade, South's K becomes a winner (and North's A later); if East discards a diamond, North's Q becomes good. Proper order of running the side winners (after trumps) is what produces the squeeze."
-}
-
-,
+},
   {
     "id": 3,
     "title": "South to Play",
