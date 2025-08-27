@@ -127,7 +127,7 @@ function convertRank(r) {
 }
 
 function showProblem() {
-  const p = problems[current];
+  p = problems[current];
   renderProblem(p);
 }
 
