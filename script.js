@@ -4,8 +4,48 @@ let current = 0;
 async function loadProblems() {
   const res = await fetch("problems.json");
   problems = await res.json();
+  for (let p of problems) {
+    checkDeal(p)
+  }
   showProblem();
 }
+
+function checkDeal(deal) {
+  const allCards = new Set();
+  const suits = ["spades", "hearts", "diamonds", "clubs"];
+  const ranks = "AKQJT98765432".split("");
+
+  const expectedCards = [];
+  for (let s of ["S","H","D","C"]) {
+    for (let r of ranks) {
+      expectedCards.push(r + s);
+    }
+  }
+
+  let counts = { N:0, E:0, S:0, W:0 };
+
+  for (let seat of ["N","E","S","W"]) {
+    for (let suit of suits) {
+      for (let r of deal.hands[seat][suit]) {
+        let code = r + suit[0].toUpperCase(); // e.g. "A" + "S" → "AS"
+        counts[seat]++;
+        if (allCards.has(code)) {
+          console.error("Duplicate card:", code);
+        }
+        allCards.add(code);
+      }
+    }
+  }
+
+  console.log("Card counts:", counts);
+
+  if (allCards.size !== 52) {
+    console.error("Error: deal does not contain 52 unique cards.");
+  } else {
+    console.log("Deal is valid: 52 cards, 13 per hand.");
+  }
+}
+
 
 function renderHand(label, hand) {
   return `
