@@ -127,7 +127,7 @@ function convertRank(r) {
 }
 
 function showProblem() {
-  // Map characters to API codes
+  p = problems[current];
   if (r === "T") return "0"; // API uses "0" for Ten
   return r;
 }
