@@ -82,7 +82,7 @@ body {
 #options button.diamonds { color: red; }
 
 .card {
-  height: 115px;         /* bigger cards */
+  height: 75px;         /* bigger cards */
   margin-right: 6px;     /* space between cards in a row */
   vertical-align: middle;
 }
