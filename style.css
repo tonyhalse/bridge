@@ -19,3 +19,31 @@ body {
   margin-top: 15px;
   font-weight: bold;
 }
+
+#table {
+  display: grid;
+  grid-template-areas:
+    ". north ."
+    "west center east"
+    ". south .";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 600px;
+}
+
+.north { grid-area: north; }
+.south { grid-area: south; }
+.east  { grid-area: east; }
+.west  { grid-area: west; }
+.center{ grid-area: center; }
+
+.hand {
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 6px;
+  font-family: monospace;
+}
