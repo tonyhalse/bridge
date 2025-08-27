@@ -5,8 +5,8 @@
     "hands": {
       "N": { "spades": "AQT7", "hearts": "KJ3", "diamonds": "762", "clubs": "985" },
       "E": { "spades": "842",  "hearts": "Q97", "diamonds": "AKJ3", "clubs": "742" },
-      "S": { "spades": "KJ96", "hearts": "A105", "diamonds": "Q98", "clubs": "AKQ" },
-      "W": { "spades": "53",   "hearts": "8642", "diamonds": "1054", "clubs": "J1063" }
+      "S": { "spades": "KJ96", "hearts": "AT5", "diamonds": "Q98", "clubs": "AKQ" },
+      "W": { "spades": "53",   "hearts": "8642", "diamonds": "T54", "clubs": "JT63" }
     },
     "contract": "4♠ by South",
     "problem": "What is the correct opening lead?",
@@ -19,9 +19,9 @@
     "title": "Declarer Play",
     "hands": {
       "N": { "spades": "KQ",   "hearts": "875",  "diamonds": "AQ92", "clubs": "J93" },
-      "E": { "spades": "763",  "hearts": "KJ106","diamonds": "1074", "clubs": "Q75" },
-      "S": { "spades": "AJ109","hearts": "AQ9",  "diamonds": "K53",  "clubs": "AK8" },
-      "W": { "spades": "8542", "hearts": "432",  "diamonds": "J86",  "clubs": "1062" }
+      "E": { "spades": "763",  "hearts": "KJT6","diamonds": "T74", "clubs": "Q75" },
+      "S": { "spades": "AJT9","hearts": "AQ9",  "diamonds": "K53",  "clubs": "AK8" },
+      "W": { "spades": "8542", "hearts": "432",  "diamonds": "J86",  "clubs": "T62" }
     },
     "contract": "3NT by South",
     "problem": "West leads ♥4. What is South's best plan?",
