@@ -45,18 +45,15 @@ body {
   border: 1px solid #ccc;
   padding: 6px;
   border-radius: 6px;
-  font-family: monospace;
-}
-
-.hand {
-  font-family: monospace;
   text-align: left;
-  line-height: 1.4;
+  line-height: 1.1;     /* tighter spacing */
 }
 
 .hand div {
   font-size: 1.1em;   /* a little bigger */
   font-weight: bold;  /* bold suits */
+  padding: 0;
+  margin-top: 2px;   /* tiny controlled gap between suits */
 }
 
 .hand .spades { color: black; }
@@ -72,5 +69,3 @@ body {
   font-size: 1.3em;
   margin-right: 4px;
 }
-
-
