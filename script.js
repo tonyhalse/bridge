@@ -48,10 +48,10 @@ function renderHand(label, hand) {
   return `
     <div class="hand">
       <div><b>${label}</b></div>
-      <div>♠ ${hand.spades || "-"}</div>
-      <div>♥ ${hand.hearts || "-"}</div>
-      <div>♦ ${hand.diamonds || "-"}</div>
-      <div>♣ ${hand.clubs || "-"}</div>
+      <div class="spades">♠ ${hand.spades || "-"}</div>
+      <div class="hearts">♥ ${hand.hearts || "-"}</div>
+      <div class="diamonds">♦ ${hand.diamonds || "-"}</div>
+      <div class="clubs">♣ ${hand.clubs || "-"}</div>
     </div>
   `;
 }
