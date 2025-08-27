@@ -126,6 +126,12 @@ function convertRank(r) {
   return r;
 }
 
+function convertRank2(r) {
+  // Map characters to API codes
+  if (r === "T") return "0"; // API uses "0" for Ten
+  return r;
+}
+
 function showProblem() {
   p = problems[current];
   renderProblem(p);
