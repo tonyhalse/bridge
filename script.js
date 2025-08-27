@@ -11,12 +11,28 @@ function renderHand(label, hand) {
   return `
     <div class="hand">
       <div><b>${label}</b></div>
-      <div class="spades">♠ ${hand.spades || "-"}</div>
-      <div class="hearts">♥ ${hand.hearts || "-"}</div>
-      <div class="diamonds">♦ ${hand.diamonds || "-"}</div>
-      <div class="clubs">♣ ${hand.clubs || "-"}</div>
+      <div class="cards">${renderCards("spades", hand.spades)}</div>
+      <div class="cards">${renderCards("hearts", hand.hearts)}</div>
+      <div class="cards">${renderCards("diamonds", hand.diamonds)}</div>
+      <div class="cards">${renderCards("clubs", hand.clubs)}</div>
     </div>
   `;
+}
+
+function renderCards(suit, ranks) {
+  if (!ranks) return "";
+  return ranks.split("").map(r => {
+    const rank = convertRank(r);
+    const suitLetter = suit[0].toUpperCase(); // "S", "H", "D", "C"
+    const code = rank + suitLetter;           // e.g. "AS", "0H"
+    return `<img src="https://deckofcardsapi.com/static/img/${code}.png" class="card">`;
+  }).join("");
+}
+
+function convertRank(r) {
+  // Map characters to API codes
+  if (r === "T") return "0"; // API uses "0" for Ten
+  return r;
 }
 
 function showProblem() {
