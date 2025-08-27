@@ -4,25 +4,25 @@
   "contract": "3NT by South",
   "declarer": "S",
   "hands": {
-    "N": {
+    "North": {
       "spades": "AQ3",
       "hearts": "KJ4",
       "diamonds": "AQ7",
       "clubs": "5432"
     },
-    "E": {
+    "East": {
       "spades": "JT97",
       "hearts": "Q983",
       "diamonds": "42",
       "clubs": "T86"
     },
-    "S": {
+    "South": {
       "spades": "K42",
       "hearts": "A76",
       "diamonds": "KJ53",
       "clubs": "AQ7"
     },
-    "W": {
+    "West": {
       "spades": "865",
       "hearts": "T52",
       "diamonds": "T986",
@@ -34,38 +34,47 @@
     "answer": "♦A",
     "explanation": "Leading ♦A is correct to establish tricks quickly."
 },
-  {
-    "id": 2,
-    "contract": "6♥ by South",
-    "declarer": "S",
-    "hands": {
-      "N": {
-        "spades": "A3",
-        "hearts": "QJT9",
-        "diamonds": "KQ5",
-        "clubs": "A84"
-      },
-      "E": {
-        "spades": "QJT5",
-        "hearts": "65",
-        "diamonds": "J982",
-        "clubs": "T3"
-      },
-      "S": {
-        "spades": "K42",
-        "hearts": "AK8742",
-        "diamonds": "A4",
-        "clubs": "KQ"
-      },
-      "W": {
-        "spades": "9876",
-        "hearts": "3",
-        "diamonds": "T763",
-        "clubs": "J976"
-      }
+{
+  "id": 2,
+  "contract": "6♥ by South",
+  "declarer": "S",
+  "hands": {
+    "N": {
+      "spades": "A3",
+      "hearts": "QJT9",
+      "diamonds": "KQ5",
+      "clubs": "A843"
     },
-    "problem": "South is in 6♥. After drawing trumps and running side-suit winners, East is squeezed in spades and diamonds. What’s the winning plan?"
+    "E": {
+      "spades": "QJT9",
+      "hearts": "65",
+      "diamonds": "J982",
+      "clubs": "T76"
+    },
+    "S": {
+      "spades": "K42",
+      "hearts": "AK8742",
+      "diamonds": "A4",
+      "clubs": "KQ"
+    },
+    "W": {
+      "spades": "8765",
+      "hearts": "3",
+      "diamonds": "T763",
+      "clubs": "J952"
+    }
   },
+  "problem": "South is in 6♥. After drawing trumps, declarer has a number of side-suit winners but East guards both spades and diamonds. How should declarer play the side suits to effect the simple squeeze and make the contract?",
+  "options": [
+    "Cash all side-suit winners in the right order to squeeze East",
+    "Lead a spade immediately to set up a spade trick",
+    "Give up a trick in diamonds first to establish entries",
+    "Play off clubs first then stop"
+  ],
+  "answer": "Cash all side-suit winners in the right order to squeeze East",
+  "explanation": "Draw trumps, then run the established winners (e.g. clubs and high side winners) so East is forced to unguard either spades or diamonds. That creates an extra trick for declarer."
+}
+,
   {
     "id": 3,
     "title": "South to Play",
