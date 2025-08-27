@@ -1,22 +1,11 @@
-// Example problem set
-const problems = [
-  {
-    title: "Problem 1",
-    contract: "4♥ by South",
-    problem: "West leads the ♠K. How should South play?",
-    hands: {
-      N: { spades: "AQT7", hearts: "KJ3", diamonds: "762", clubs: "985" },
-      E: { spades: "J32", hearts: "T84", diamonds: "QJ83", clubs: "Q42" },
-      S: { spades: "964", hearts: "AQ9762", diamonds: "AK", clubs: "K3" },
-      W: { spades: "K85", hearts: "5", diamonds: "T954", clubs: "AJT76" }
-    },
-    options: ["Win ♠A", "Duck spade", "Ruff immediately"],
-    answer: "Duck spade",
-    explanation: "If South ducks the first spade, West has no entry to continue the attack."
-  }
-];
-
+let problems = [];
 let current = 0;
+
+async function loadProblems() {
+  const res = await fetch("problems.json");
+  problems = await res.json();
+  showProblem();
+}
 
 function renderHand(label, hand) {
   return `
