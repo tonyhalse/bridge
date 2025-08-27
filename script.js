@@ -128,7 +128,8 @@ function convertRank(r) {
 
 function showProblem() {
   p = problems[current];
-  return renderProblem(p);
+  renderProblem(p);
+  return p;
 }
 
 function showProblemOLD() {
