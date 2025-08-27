@@ -128,7 +128,7 @@ function convertRank(r) {
 
 function showProblem() {
   p = problems[current];
-  if (r === "T") return "0"; // API uses "0" for Ten
+  renderProblem(p);
   return r;
 }
 
