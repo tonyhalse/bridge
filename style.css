@@ -47,3 +47,7 @@ body {
   border-radius: 6px;
   font-family: monospace;
 }
+
+.hand div { font-family: monospace; text-align: left; }
+.hand .hearts, .hand .diamonds { color: red; }
+
