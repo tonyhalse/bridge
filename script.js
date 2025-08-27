@@ -9,25 +9,28 @@ async function loadProblems() {
 
 function showProblem() {
   const p = problems[current];
-document.getElementById("problem-container").innerHTML = `
-  <h2>${p.title}</h2>
-  <div id="table">
-    <div class="north">${renderHand("N", p.hands.N)}</div>
-    <div class="west">${renderHand("W", p.hands.W)}</div>
-    <div class="center">
-      <p><b>Contract:</b> ${p.contract}</p>
-      <p>${p.problem}</p>
+  document.getElementById("problem-container").innerHTML = `
+    <h2>${p.title}</h2>
+    <div id="table">
+      <div class="north">${renderHand("N", p.hands.N)}</div>
+      <div class="west">${renderHand("W", p.hands.W)}</div>
+      <div class="center">
+        <p><b>Contract:</b> ${p.contract}</p>
+        <p>${p.problem}</p>
+        <div id="options"></div>   <!-- 👈 add options container here -->
+        <div id="feedback"></div>  <!-- 👈 and feedback -->
+      </div>
+      <div class="east">${renderHand("E", p.hands.E)}</div>
+      <div class="south">${renderHand("S", p.hands.S)}</div>
     </div>
-    <div class="east">${renderHand("E", p.hands.E)}</div>
-    <div class="south">${renderHand("S", p.hands.S)}</div>
-  </div>
-`;
+  `;
 
+  // Reset feedback + buttons
   const optionsDiv = document.getElementById("options");
-  optionsDiv.innerHTML = "";
   document.getElementById("feedback").textContent = "";
   document.getElementById("nextBtn").style.display = "none";
 
+  // Build answer buttons
   p.options.forEach(opt => {
     const btn = document.createElement("button");
     btn.textContent = opt;
@@ -43,6 +46,7 @@ document.getElementById("problem-container").innerHTML = `
     optionsDiv.appendChild(btn);
   });
 }
+
 
 function renderHand(label, hand) {
   return `
