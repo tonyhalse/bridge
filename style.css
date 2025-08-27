@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.hand {
+  white-space: pre;
+  margin: 5px 0;
+  font-family: monospace;
+}
+
+.options button {
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 1em;
+}
+
+#feedback {
+  margin-top: 15px;
+  font-weight: bold;
+}
