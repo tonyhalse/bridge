@@ -1,79 +1,84 @@
 [
   {
-  "id": 1,
-  "contract": "3NT by South",
-  "declarer": "S",
-  "hands": {
-    "North": {
-      "spades": "AQ3",
-      "hearts": "KJ4",
-      "diamonds": "AQ7",
-      "clubs": "5432"
+    "id": 1,
+    "contract": "3NT by South",
+    "declarer": "S",
+    "hands": {
+      "N": {
+        "spades": "AQ3",
+        "hearts": "KJ4",
+        "diamonds": "AQ7",
+        "clubs": "5432"
+      },
+      "E": {
+        "spades": "JT97",
+        "hearts": "Q983",
+        "diamonds": "42",
+        "clubs": "T86"
+      },
+      "S": {
+        "spades": "K42",
+        "hearts": "A76",
+        "diamonds": "KJ53",
+        "clubs": "AQ7"
+      },
+      "W": {
+        "spades": "865",
+        "hearts": "T52",
+        "diamonds": "T986",
+        "clubs": "KJ9"
+      }
     },
-    "East": {
-      "spades": "JT97",
-      "hearts": "Q983",
-      "diamonds": "42",
-      "clubs": "T86"
-    },
-    "South": {
-      "spades": "K42",
-      "hearts": "A76",
-      "diamonds": "KJ53",
-      "clubs": "AQ7"
-    },
-    "West": {
-      "spades": "865",
-      "hearts": "T52",
-      "diamonds": "T986",
-      "clubs": "KJ9"
-    }
+    "problem": "South is in 3NT. After cashing the diamonds and hearts, East is squeezed in spades and hearts. How should declarer plan the play?",
+    "options": [
+      "Run diamonds and hearts in the right order to squeeze East",
+      "Try a spade finesse early",
+      "Lead clubs to set up dummy's suit",
+      "Duck a heart at trick one"
+    ],
+    "answer": "Run diamonds and hearts in the right order to squeeze East",
+    "explanation": "Declarer should cash the diamonds and then the heart winners, forcing East to discard a spade guard. This creates an extra trick."
   },
-  "problem": "South is in 3NT. After cashing the diamonds and hearts, East is squeezed in spades and hearts. How should declarer plan the play?",
-    "options": ["♥Q", "♦A", "♣J", "♠5"],
-    "answer": "♦A",
-    "explanation": "Leading ♦A is correct to establish tricks quickly."
-},
-{
-  "id": 2,
-  "contract": "6♥ by South",
-  "declarer": "S",
-  "hands": {
-    "N": {
-      "spades": "A3",
-      "hearts": "QJT9",
-      "diamonds": "Q85",
-      "clubs": "A843"
+  {
+    "id": 2,
+    "contract": "6♥ by South",
+    "declarer": "S",
+    "hands": {
+      "N": {
+        "spades": "A3",
+        "hearts": "QJT9",
+        "diamonds": "Q85",
+        "clubs": "A843"
+      },
+      "E": {
+        "spades": "QJT9",
+        "hearts": "65",
+        "diamonds": "J976",
+        "clubs": "T76"
+      },
+      "S": {
+        "spades": "K4",
+        "hearts": "AK8742",
+        "diamonds": "A2",
+        "clubs": "KQ3"
+      },
+      "W": {
+        "spades": "8765",
+        "hearts": "3",
+        "diamonds": "KT843",
+        "clubs": "J92"
+      }
     },
-    "E": {
-      "spades": "QJT9",
-      "hearts": "65",
-      "diamonds": "J976",
-      "clubs": "T76"
-    },
-    "S": {
-      "spades": "K4",
-      "hearts": "AK8742",
-      "diamonds": "A2",
-      "clubs": "KQ3"
-    },
-    "W": {
-      "spades": "8765",
-      "hearts": "3",
-      "diamonds": "KT843",
-      "clubs": "J92"
-    }
+    "problem": "South is in 6♥. After drawing trumps, declarer can cash side-suit winners. East appears to be the only defender who can hold both spades and diamonds. How should declarer play to effect the simple squeeze?",
+    "options": [
+      "Draw trumps, then cash clubs and high side winners in the correct order to squeeze East",
+      "Draw trumps, give up a small diamond to eliminate an entry, then claim",
+      "Draw one trump, finesse spades through East, then run clubs",
+      "Ruff two diamonds early to create an extra trick"
+    ],
+    "answer": "Draw trumps, then cash clubs and high side winners in the correct order to squeeze East",
+    "explanation": "Draw trumps, then run the club winners and other high cards. East cannot keep control of both spades and diamonds, so one suit will yield an extra trick."
   },
-  "problem": "South is in 6♥. After drawing trumps, declarer can cash side-suit winners. East appears to be the only defender who can hold both spades and diamonds. How should declarer play to effect the simple squeeze?",
-  "options": [
-    "Draw trumps, then cash clubs and high side winners in the correct order to squeeze East",
-    "Draw trumps, give up a small diamond to eliminate an entry, then claim",
-    "Draw one trump, finesse spades through East, then run clubs",
-    "Ruff two diamonds early to create an extra trick"
-  ],
-  "answer": "Draw trumps, then cash clubs and high side winners in the correct order to squeeze East",
-  "explanation": "Plan: draw trumps (cash the heart ace and kings) so trumps are gone. Then run the established club winners (A, K, Q etc.) and other side winners from the two hands. East must follow and will be forced to discard a guard in either spades or diamonds. If East discards a spade, South's K becomes a winner (and North's A later); if East discards a diamond, North's Q becomes good. Proper order of running the side winners (after trumps) is what produces the squeeze."
-},
   {
     "id": 3,
     "title": "South to Play",
