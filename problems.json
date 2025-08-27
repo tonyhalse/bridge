@@ -98,7 +98,7 @@
     "id": 4,
     "title": "Declarer Play",
     "hands": {
-      "N": { "spades": "KQT",   "hearts": "875",  "diamonds": "AQ92", "clubs": "J93" },
+      "N": { "spades": "KQ",   "hearts": "875",  "diamonds": "AQ92", "clubs": "J943" },
       "E": { "spades": "763",  "hearts": "KJT6","diamonds": "T74", "clubs": "Q75" },
       "S": { "spades": "AJT9","hearts": "AQ9",  "diamonds": "K53",  "clubs": "AK8" },
       "W": { "spades": "8542", "hearts": "432",  "diamonds": "J86",  "clubs": "T62" }
