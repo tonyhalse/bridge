@@ -126,6 +126,11 @@ function convertRank(r) {
   return r;
 }
 
+function showProblem() {
+  const p = problems[current];
+  renderProblem(p);
+}
+
 function showProblemOLD() {
   const p = problems[current];
   document.getElementById("problem-container").innerHTML = `
@@ -170,11 +175,6 @@ function showProblemOLD() {
     };
     optionsDiv.appendChild(btn);
   });
-}
-
-function showProblem() {
-  const p = problems[current];
-  renderProblem(p);
 }
 
 // Next problem
