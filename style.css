@@ -103,12 +103,6 @@ body {
   align-items: center;
 }
 
-.north { grid-area: north; }
-.south { grid-area: south; }
-.east  { grid-area: east; }
-.west  { grid-area: west; }
-.center { grid-area: center; }
-
 .hand .cards {
   display: flex;
   flex-direction: row;
