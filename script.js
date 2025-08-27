@@ -44,6 +44,18 @@ function showProblem() {
   });
 }
 
+function renderHand(label, hand) {
+  return `
+    <div class="hand">
+      <div><b>${label}</b></div>
+      <div>♠ ${hand.spades || "-"}</div>
+      <div>♥ ${hand.hearts || "-"}</div>
+      <div>♦ ${hand.diamonds || "-"}</div>
+      <div>♣ ${hand.clubs || "-"}</div>
+    </div>
+  `;
+}
+
 document.getElementById("nextBtn").onclick = () => {
   current = (current + 1) % problems.length;
   showProblem();
