@@ -47,7 +47,7 @@ function checkDeal(deal) {
 }
 
 
-function renderHandOLD(label, hand) {
+function renderHand(label, hand) {
   return `
     <div class="hand">
       <div><b>${label}</b></div>
@@ -58,7 +58,7 @@ function renderHandOLD(label, hand) {
     </div>
   `;
 }
-function renderHand(container, cards) {
+function renderHandNEW(container, cards) {
   // cards: e.g. ["AS","KH","QD","2C"]
   const handDiv = document.createElement("div");
   handDiv.className = "cards";
@@ -126,13 +126,13 @@ function convertRank(r) {
   return r;
 }
 
-function showProblem() {
+function showProblemNEW() {
   p = problems[current];
   renderProblem(p);
   return p;
 }
 
-function showProblemOLD() {
+function showProblem() {
   const p = problems[current];
   document.getElementById("problem-container").innerHTML = `
     <h2>${p.title}</h2>
