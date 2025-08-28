@@ -135,8 +135,14 @@ function showProblemNEW() {
 function showProblem() {
   const p = problems[current];
   document.getElementById("problem-container").innerHTML = `
-    <h2>${p.title}</h2>
     <div id="table">
+      <div class="description">
+        <h2>${p.title}</h2>
+        <p><b>Contract:</b> ${p.contract}</p>
+        <p>${p.problem}</p>
+        <div id="options"></div>
+        <div id="feedback"></div>
+      </div>
       <div class="north">${renderHand("N", p.hands.N)}</div>
       <div class="west">${renderHand("W", p.hands.W)}</div>
       <div class="center">
