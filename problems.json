@@ -4,30 +4,10 @@
     "contract": "3NT by South",
     "declarer": "S",
     "hands": {
-      "N": {
-        "spades": "AQ3",
-        "hearts": "KJ4",
-        "diamonds": "AQ7",
-        "clubs": "5432"
-      },
-      "E": {
-        "spades": "JT97",
-        "hearts": "Q983",
-        "diamonds": "42",
-        "clubs": "T86"
-      },
-      "S": {
-        "spades": "K42",
-        "hearts": "A76",
-        "diamonds": "KJ53",
-        "clubs": "AQ7"
-      },
-      "W": {
-        "spades": "865",
-        "hearts": "T52",
-        "diamonds": "T986",
-        "clubs": "KJ9"
-      }
+      "N": {"spades": "AQ3","hearts": "KJ4","diamonds": "AQ7","clubs": "5432"},
+      "E": {"spades": "JT97","hearts": "Q983","diamonds": "42","clubs": "T86"},
+      "S": {"spades": "K42","hearts": "A76","diamonds": "KJ53","clubs": "AQ7"},
+      "W": {"spades": "865","hearts": "T52","diamonds": "T986","clubs": "KJ9"}
     },
     "problem": "South is in 3NT. After cashing the diamonds and hearts, East is squeezed in spades and hearts. How should declarer plan the play?",
     "options": [
@@ -44,30 +24,10 @@
   "contract": "6NT by South",
   "declarer": "S",
   "hands": {
-    "N": {
-      "spades": "AJ42",
-      "hearts": "KQ3",
-      "diamonds": "A76",
-      "clubs": "J98"
-    },
-    "E": {
-      "spades": "QT98",
-      "hearts": "J2",
-      "diamonds": "985",
-      "clubs": "QT76"
-    },
-    "S": {
-      "spades": "K5",
-      "hearts": "A94",
-      "diamonds": "KQJ2",
-      "clubs": "AK54"
-    },
-    "W": {
-      "spades": "763",
-      "hearts": "T8765",
-      "diamonds": "T43",
-      "clubs": "32"
-    }
+    "N": {"spades": "AJ42","hearts": "KQ3","diamonds": "A76","clubs": "J98"},
+    "E": {"spades": "QT98","hearts": "J2","diamonds": "985","clubs": "QT76"},
+    "S": {"spades": "K5","hearts": "A94","diamonds": "KQJ2","clubs": "AK54"},
+    "W": {"spades": "763","hearts": "T8765","diamonds": "T43","clubs": "32"}
   },
   "problem": "South is in 6NT. Declarer counts 11 top tricks (spades 2, hearts 3, diamonds 4, clubs 2). How can South make the 12th trick?",
   "options": [
