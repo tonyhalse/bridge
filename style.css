@@ -7,7 +7,7 @@ body {
 #table {
   display: grid;
   grid-template-areas:
-    ". north ."
+    "description north ."
     "west center east"
     ". south .";
   gap: 20px;
@@ -21,6 +21,7 @@ body {
 .east   { grid-area: east; }
 .west   { grid-area: west; }
 .center { grid-area: center; }
+.description { grid-area: description; }
 
 /* Hands */
 .hand {
