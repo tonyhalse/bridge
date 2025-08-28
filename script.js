@@ -145,7 +145,7 @@ function showProblem() {
       </div>
       <div class="north">${renderHand("N", p.hands.N)}</div>
       <div class="west">${renderHand("W", p.hands.W)}</div>
-      <div class="center">
+      <div class="centerXXX">
         <p><b>Contract:</b> ${p.contract}</p>
         <p>${p.problem}</p>
         <div id="options"></div>
